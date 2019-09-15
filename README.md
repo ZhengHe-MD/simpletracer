@@ -12,9 +12,6 @@ func funcA() {
 	funcC()
 }
 
-In the case of distributed tracing, we can use the popular open-sourced projects like Jaeger, that implements opentracing specs. The trace data will be sampled and collected by some agents and collector, and indexed by a search engine and finally an Web UI for easy lookups.
-
-In the case of standalone tracing, we usually s
 func funcB() {
 	funcD()
 }
@@ -25,7 +22,9 @@ func funcC() {
 
 func funcD() {}
 ```
-imply log the trace, manually, in each function call, and search that logs in Kibana with several clicks. It would be better if we can log it once, in the root function call of the DAG, and search it once. That's what this project is about.
+In the case of distributed tracing, we can use the popular open-sourced projects like Jaeger, that implements opentracing specs. The trace data will be sampled and collected by some agents and collector, and indexed by a search engine and finally an Web UI for easy lookups.
+
+In the case of standalone tracing, we usually simply log the trace, manually, in each function call, and search that logs in Kibana with several clicks. It would be better if we can log it once, in the root function call of the DAG, and search it once. That's what this project is about.
 
 change the above codes to the following
 ```go
