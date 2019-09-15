@@ -1,7 +1,7 @@
 package simpletracer
 
 import (
-	"intracer/api"
+	"github.com/ZhengHe-MD/simpletracer/api"
 	"math/rand"
 	"sync"
 	"time"

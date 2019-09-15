@@ -1,7 +1,7 @@
 package api
 
 // SpanContext represents Span state that must propagate to descendant Spans
-type SpanContext interface {}
+type SpanContext interface{}
 
 // Span represents an active, un-finished span in the OpenTracing system.
 //
@@ -27,4 +27,3 @@ type Span interface {
 	// Provides access to the Tracer that created this Span.
 	Tracer() Tracer
 }
-

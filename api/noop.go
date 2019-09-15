@@ -11,10 +11,10 @@ var (
 	defaultNoopTracer      Tracer      = NoopTracer{}
 )
 
-func (n noopSpan) Context() SpanContext                                  { return defaultNoopSpanContext }
-func (n noopSpan) Finish()                                               {}
-func (n noopSpan) SetOperationName(operationName string) Span            { return n }
-func (n noopSpan) Tracer() Tracer                                        { return defaultNoopTracer }
+func (n noopSpan) Context() SpanContext                       { return defaultNoopSpanContext }
+func (n noopSpan) Finish()                                    {}
+func (n noopSpan) SetOperationName(operationName string) Span { return n }
+func (n noopSpan) Tracer() Tracer                             { return defaultNoopTracer }
 
 // StartSpan belongs to the Tracer interface.
 func (n NoopTracer) StartSpan(operationName string, opts ...StartSpanOption) Span {

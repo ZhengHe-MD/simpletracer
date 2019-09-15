@@ -1,6 +1,5 @@
 package api
 
-
 type registeredTracer struct {
 	tracer       Tracer
 	isRegistered bool

@@ -3,7 +3,7 @@ package simpletracer
 
 import (
 	"context"
-	. "intracer/api"
+	. "github.com/ZhengHe-MD/simpletracer/api"
 )
 
 type contextKey struct{}

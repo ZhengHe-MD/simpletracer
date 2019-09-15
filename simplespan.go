@@ -2,7 +2,7 @@ package simpletracer
 
 import (
 	"fmt"
-	. "intracer/api"
+	. "github.com/ZhengHe-MD/simpletracer/api"
 	"strings"
 	"sync"
 	"time"

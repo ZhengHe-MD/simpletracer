@@ -54,5 +54,3 @@ func FollowsFrom(sc SpanContext) SpanReference {
 		ReferencedContext: sc,
 	}
 }
-
-
